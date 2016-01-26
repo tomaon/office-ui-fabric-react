@@ -1,0 +1,47 @@
+{
+    "name": "office-ui-fabric-react",
+    "version": "0.0.1",
+    "description": "Office UI Fabric components built with React",
+    "keywords": [
+        "office-ui-fabric",
+        "react"
+    ],
+    "bugs": {
+        "url": "https://github.com/tomaon/office-ui-fabric-react/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Tomohiko AONO",
+        "url": "https://github.com/tomaon"
+    },
+    "files": [
+        "dist",
+        "samples.html",
+        "src"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tomaon/office-ui-fabric-react"
+    },
+    "scripts": {
+        "prepublish": "NODE_ENV=production webpack -p",
+        "build": "NODE_ENV=development webpack -d",
+        "watch": "NODE_ENV=development webpack -d --watch"
+    },
+    "dependencies": {
+        "classnames": "^2.2.3",
+        "office-ui-fabric": "1.2.1",
+        "react": "^0.14.6",
+        "react-dom": "^0.14.6"
+    },
+    "devDependencies": {
+        "eslint": "^1.10.3",
+        "eslint-config-google": "^0.3.0",
+        "eslint-loader": "^1.2.0",
+        "webpack": "^1.12.12"
+    },
+    "engines": {
+        "node": "^4.2.6"
+    },
+    "private": true
+}

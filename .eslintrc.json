@@ -1,0 +1,32 @@
+{
+    "extends": "google",
+
+    "env": {
+        "browser": true
+    },
+
+    "globals": {
+        "require": true
+    },
+
+    "rules": {
+        "indent": [ 2, 4 ],
+        "linebreak-style": [ 2, "unix" ],
+        "quotes": [ 2, "single" ],
+        "semi": [ 2, "always" ],
+
+        "no-inline-comments": [0],
+        "no-warning-comments": [0],
+        "quote-props": [2, "as-needed"],
+
+        "require-jsdoc": [2, {
+            "require": {
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
+                "ClassDeclaration": false
+            }
+        }]
+    },
+
+    "root": true
+}

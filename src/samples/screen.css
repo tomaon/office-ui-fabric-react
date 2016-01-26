@@ -1,0 +1,20 @@
+/*
+ * src/samples/screen.css
+ */
+
+#root > section > header {
+    float: left;
+    width: 200px;
+}
+
+#root > section > header > nav > ul {
+    list-style: none;
+}
+
+#root > section > article {
+    margin-left: 200px;
+}
+
+#root > section > article > section {
+    padding-bottom: 1em;
+}
