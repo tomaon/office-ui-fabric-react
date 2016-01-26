@@ -1,0 +1,8 @@
+.node-version
+
+dist
+local_modules
+node_modules
+
+_*
+*~
