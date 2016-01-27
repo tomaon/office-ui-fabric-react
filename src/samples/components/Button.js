@@ -48,7 +48,7 @@ module.exports = React.createClass({
                         React.createElement(
                             Components.button,
                             Object.assign({}, props, {
-                                eventKey: '11'
+                                eventKey: 'b11'
                             }),
                             description
                         )
@@ -58,7 +58,7 @@ module.exports = React.createClass({
                         React.createElement(
                             Components.button,
                             Object.assign({}, props, {
-                                eventKey: '12',
+                                eventKey: 'b12',
                                 kind: 'primary'
                             }),
                             description
@@ -76,7 +76,7 @@ module.exports = React.createClass({
                         React.createElement(
                             Components.button,
                             Object.assign({}, props, {
-                                eventKey: '21',
+                                eventKey: 'b21',
                                 kind: 'command'
                             }),
                             description
@@ -87,7 +87,7 @@ module.exports = React.createClass({
                         React.createElement(
                             Components.button,
                             Object.assign({}, props, {
-                                eventKey: '22',
+                                eventKey: 'b22',
                                 kind: 'compound'
                             }),
                             description
@@ -105,7 +105,7 @@ module.exports = React.createClass({
                         React.createElement(
                             Components.button,
                             Object.assign({}, props, {
-                                eventKey: '31',
+                                eventKey: 'b31',
                                 kind: 'hero'
                             }),
                             description

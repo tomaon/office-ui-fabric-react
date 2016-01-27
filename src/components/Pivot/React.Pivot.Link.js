@@ -68,11 +68,8 @@ var PivotLink = React.createClass({
 });
 
 function getClassName(that, props) {
-    var className = 'ms-Pivot-link';
-    if (props.overflow) {
-        className += ' ms-Pivot-link--overflow';
-    }
-    return that.className(props.className, className, {
+    return that.className(props.className, 'ms-Pivot-link', {
+        'ms-Pivot-link--overflow': props.overflow,
         'is-selected': props.selected
     });
 }

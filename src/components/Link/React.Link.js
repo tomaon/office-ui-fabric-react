@@ -29,8 +29,8 @@ var Link = React.createClass({
         return (
             React.DOM.a(
                 this.getProps(Attributes, this.props, {
-                    className: getClassName(this, this.props),
-                    onClick: this.handleClick
+                    onClick: this.handleClick,
+                    className: getClassName(this, this.props)
                 }),
                 this.props.children
             )

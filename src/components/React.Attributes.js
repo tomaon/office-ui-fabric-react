@@ -226,6 +226,20 @@ module.exports = {
         ])
     }),
 
+    ol: Object.assign({}, Attributes, {
+
+        // Content attributes
+        reversed: React.PropTypes.bool,
+        start: React.PropTypes.number,
+        type: React.PropTypes.oneOf(['1', 'a', 'A', 'i', 'I']),
+
+        // Aria role attribute
+        role: React.PropTypes.oneOf([
+            'list', 'directory', 'listbox', 'menu', 'menubar',
+            'presentation', 'tablist', 'toolbar', 'tree'
+        ])
+    }),
+
     span: Object.assign({}, Attributes, {
 
         // Aria role attribute

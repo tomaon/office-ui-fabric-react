@@ -57,10 +57,7 @@ var Pivot = React.createClass({
                 Object.assign(
                     this.getProps(Attributes, this.props, {
                         className: getClassName(this, this.props)
-                    }),
-                    {
-                        onClick: this.handleSelect
-                    }
+                    })
                 ),
                 getLinks(this, this.props)
             )
@@ -74,14 +71,10 @@ var Pivot = React.createClass({
 });
 
 function getClassName(that, props) {
-    var className = 'ms-Pivot';
-    if (props.tabs) {
-        className += ' ms-Pivot--tabs';
-    }
-    if (props.large) {
-        className += ' ms-Pivot--large';
-    }
-    return that.className(props.className, className);
+    return that.className(props.className, 'ms-Pivot', {
+        'ms-Pivot--tabs': props.tabs,
+        'ms-Pivot--large': props.large
+    });
 }
 
 function getLinks(that, props) {

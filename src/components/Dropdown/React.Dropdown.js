@@ -68,8 +68,8 @@ var Dropdown = React.createClass({
             React.DOM.div(
                 Object.assign(
                     this.getProps(Attributes, this.props, {
-                        ref: 'dd',
-                        className: getClassName(this, this.props, this.state)
+                        className: getClassName(this, this.props, this.state),
+                        ref: 'dd'
                     }),
                     {
                         onBlur: this.handleBlur,

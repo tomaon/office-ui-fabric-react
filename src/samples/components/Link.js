@@ -38,7 +38,7 @@ module.exports = React.createClass({
                             {
                                 onClick: this.handleSelect,
                                 href: '#',
-                                eventKey: '11'
+                                eventKey: 'l1'
                             },
                             'Link to a webpage'
                         )
@@ -59,7 +59,7 @@ module.exports = React.createClass({
                             {
                                 onClick: this.handleSelect,
                                 href: '#',
-                                eventKey: '21',
+                                eventKey: 'l2',
                                 kind: 'hero'
                             },
                             'Link to a webpage'

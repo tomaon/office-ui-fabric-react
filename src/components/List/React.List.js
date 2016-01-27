@@ -46,10 +46,7 @@ var List = React.createClass({
                 Object.assign(
                     this.getProps(Attributes, this.props, {
                         className: getClassName(this, this.props)
-                    }),
-                    {
-                        onClick: this.handleSelect
-                    }
+                    })
                 ),
                 getItems(this, this.props)
             )
