@@ -59,6 +59,7 @@ module.exports = React.createClass({
                                 'DatePicker',
                                 'Dialog',
                                 'Dropdown',
+                                'Facepile',
                              // 'Icon'
                                 'Label',
                                 'Link',

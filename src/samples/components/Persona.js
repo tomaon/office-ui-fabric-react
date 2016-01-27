@@ -105,8 +105,9 @@ function getPersona(props) {
         React.createElement(
             Components.persona.ImageArea,
             {
-                src: 'src/samples/img/silver.png'
-            }
+                initials: 'blue'
+            },
+            'AL'
         ),
         React.createElement(
             Components.persona.Presence

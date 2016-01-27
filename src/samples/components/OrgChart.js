@@ -57,7 +57,7 @@ module.exports = React.createClass({
 
 });
 
-function getOrgChart(props, personaProps) {
+function getOrgChart(props, props2) {
     return React.createElement(
         Components.orgChart,
         props,
@@ -70,37 +70,37 @@ function getOrgChart(props, personaProps) {
                 {
                     eventKey: 'l1'
                 },
-                getListItem(personaProps, 'Russel Miller', 'Sales'),
-                getListItem(personaProps, 'Douglas Fielder', 'Public Relations')
+                getListItem(props2, 'RM', 'Russel Miller', 'Sales'),
+                getListItem(props2, 'DF', 'Douglas Fielder', 'Public Relations')
             )
         ),
         React.createElement(
             Components.orgChart.Group,
             {
-                title: 'Manager'
+                groupTitle: 'Manager'
             },
             React.createElement(
                 Components.orgChart.List,
                 {
                     eventKey: 'l2'
                 },
-                getListItem(personaProps, 'Grant Steel', 'Sales')
+                getListItem(props2, 'GS', 'Grant Steel', 'Sales')
             )
         ),
         React.createElement(
             Components.orgChart.Group,
             {
-                title: 'Staff'
+                groupTitle: 'Staff'
             },
             React.createElement(
                 Components.orgChart.List,
                 {
                     eventKey: 'l3'
                 },
-                getListItem(personaProps, 'Harvey Wallin', 'Public Relations'),
-                getListItem(personaProps, 'Marcus Lauer', 'Technical Support'),
-                getListItem(personaProps, 'Marcel Groce', 'Delivery'),
-                getListItem(personaProps, 'Jessica Fischer', 'Marketing')
+                getListItem(props2, 'HM', 'Harvey Wallin', 'Public Relations'),
+                getListItem(props2, 'ML', 'Marcus Lauer', 'Technical Support'),
+                getListItem(props2, 'MG', 'Marcel Groce', 'Delivery'),
+                getListItem(props2, 'JS', 'Jessica Fischer', 'Marketing')
             )
         )
     );
@@ -114,15 +114,16 @@ function getListItem(props, primaryText, secondaryText) {
     );
 }
 
-function getPersona(props, primaryText, secondaryText) {
+function getPersona(props, initials, primaryText, secondaryText) {
     return React.createElement(
         Components.persona,
         props,
         React.createElement(
             Components.persona.ImageArea,
             {
-                src: 'src/samples/img/silver.png'
-            }
+                initials: 'blue'
+            },
+            initials
         ),
         React.createElement(
             Components.persona.Presence

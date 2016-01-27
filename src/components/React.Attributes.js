@@ -102,7 +102,7 @@ module.exports = {
         // Content attributes
         alt: React.PropTypes.string,
         src: React.PropTypes.string,
-        crossOrigin: React.PropTypes.string,
+        crossOrigin: React.PropTypes.oneOf(['anonymous', 'use-credentials']),
         useMap: React.PropTypes.string,
         isMap: React.PropTypes.bool, // not-supported
         width: React.PropTypes.number,
