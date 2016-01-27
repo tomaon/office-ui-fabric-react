@@ -43,11 +43,9 @@ var List = React.createClass({
     render: function() {
         return (
             React.DOM.div(
-                Object.assign(
-                    this.getProps(Attributes, this.props, {
-                        className: getClassName(this, this.props)
-                    })
-                ),
+                this.getProps(Attributes, this.props, {
+                    className: getClassName(this, this.props)
+                }),
                 getItems(this, this.props)
             )
         );

@@ -54,11 +54,9 @@ var Pivot = React.createClass({
     render: function() {
         return (
             React.DOM.ul(
-                Object.assign(
-                    this.getProps(Attributes, this.props, {
-                        className: getClassName(this, this.props)
-                    })
-                ),
+                this.getProps(Attributes, this.props, {
+                    className: getClassName(this, this.props)
+                }),
                 getLinks(this, this.props)
             )
         );
