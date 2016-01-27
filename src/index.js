@@ -18,7 +18,7 @@ module.exports = {
     Label: require('./components/Label/React.Label'),
     Link: require('./components/Link/React.Link'),
     // List
-    // ListItem
+    ListItem: require('./components/ListItem/React.ListItem'),
     // MessageBanner
     // NavBar
     // OrgChart
