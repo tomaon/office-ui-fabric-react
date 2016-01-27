@@ -13,7 +13,7 @@ module.exports = {
     // ContextualMenu
     // DatePicker
     // Dialog
-    // Dropdown
+    Dropdown: require('./components/Dropdown/React.Dropdown'),
     Icon: require('./components/Icon/React.Icon'),
     Label: require('./components/Label/React.Label'),
     Link: require('./components/Link/React.Link'),

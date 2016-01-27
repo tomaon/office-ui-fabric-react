@@ -10,6 +10,7 @@ var React = require('react');
 
 var Components = {
     Button: require('./Button'),
+    Dropdown: require('./Dropdown'),
     Label: require('./Label'),
     Link: require('./Link'),
     ListItem: require('./ListItem'),
@@ -50,7 +51,7 @@ module.exports = React.createClass({
                                 'DatePicker',
                                 'Dialog',
                                 'Dropdown',
-                                // 'Icon'
+                             // 'Icon'
                                 'Label',
                                 'Link',
                                 'List',
