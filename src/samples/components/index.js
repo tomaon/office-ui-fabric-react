@@ -9,6 +9,21 @@
 var React = require('react');
 
 var Components = {
+    Button: require('./Button'),
+    ChoiceField: require('./ChoiceField'),
+    Dropdown: require('./Dropdown'),
+    Label: require('./Label'),
+    Link: require('./Link'),
+    List: require('./List'),
+    ListItem: require('./ListItem'),
+    Overlay: require('./Overlay'),
+    OrgChart: require('./OrgChart'),
+    Persona: require('./Persona'),
+    Pivot: require('./Pivot'),
+    SearchBox: require('./SearchBox'),
+    Table: require('./Table'),
+    TextField: require('./TextField'),
+    Toggle: require('./Toggle'),
     '': require('./empty.js')
 };
 
