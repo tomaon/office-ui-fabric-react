@@ -17,6 +17,9 @@ var Components = {
 module.exports = React.createClass({
 
     render: function() {
+        var list = getList({
+            onSelect: this.handleSelect
+        });
         return (
             React.DOM.article(
                 null,
@@ -30,7 +33,9 @@ module.exports = React.createClass({
                         null,
                         'List'
                     ),
-                    getList({})
+                    React.cloneElement(list, {
+                        eventKey: 'l1'
+                    })
                 ),
                 React.DOM.section(
                     null,
@@ -38,10 +43,19 @@ module.exports = React.createClass({
                         null,
                         'List - Grid'
                     ),
-                    getList({kind: 'grid'})
+                    React.cloneElement(list, {
+                        eventKey: 'l2',
+                        kind: 'grid'
+                    })
                 )
             )
         );
+    },
+
+    handleSelect: function(eventKey, selected, event) {
+        console.log('handleSelect: ' + eventKey +
+                    ',' + selected + '=' + event.target.textContent);
+        this.setState({selected: selected});
     }
 
 });
