@@ -27,7 +27,7 @@ module.exports = {
     // PeoplePicker
     // Persona
     // PersonaCard
-    // Pivot
+    Pivot: require('./components/Pivot/React.Pivot'),
     // ProgresIndicator
     // SearchBox
     // Spinner
