@@ -6,7 +6,7 @@
 
 module.exports = {
     // Breadcrumb
-    // Button
+    Button: require('./components/Button/React.Button'),
     // Callout
     // ChoiceField
     // CommandBar
@@ -14,7 +14,7 @@ module.exports = {
     // DatePicker
     // Dialog
     // Dropdown
-    // Icon
+    Icon: require('./components/Icon/React.Icon'),
     Label: require('./components/Label/React.Label'),
     Link: require('./components/Link/React.Link')
     // List
