@@ -29,7 +29,7 @@ module.exports = {
     // PersonaCard
     Pivot: require('./components/Pivot/React.Pivot'),
     // ProgresIndicator
-    // SearchBox
+    SearchBox: require('./components/SearchBox/React.SearchBox'),
     // Spinner
     // Table
     TextField: require('./components/TextField/React.TextField'),

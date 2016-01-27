@@ -17,6 +17,7 @@ var Components = {
     ListItem: require('./ListItem'),
     Overlay: require('./Overlay'),
     Pivot: require('./Pivot'),
+    SearchBox: require('./SearchBox'),
     TextField: require('./TextField'),
     Toggle: require('./Toggle'),
     '': require('./empty.js')
