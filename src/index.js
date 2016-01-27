@@ -15,8 +15,8 @@ module.exports = {
     // Dialog
     // Dropdown
     // Icon
-    Label: require('./components/Label/React.Label')
-    // Link
+    Label: require('./components/Label/React.Label'),
+    Link: require('./components/Link/React.Link')
     // List
     // ListItem
     // MessageBanner
