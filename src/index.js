@@ -16,7 +16,7 @@ module.exports = {
     // Dropdown
     Icon: require('./components/Icon/React.Icon'),
     Label: require('./components/Label/React.Label'),
-    Link: require('./components/Link/React.Link')
+    Link: require('./components/Link/React.Link'),
     // List
     // ListItem
     // MessageBanner
@@ -33,5 +33,5 @@ module.exports = {
     // Spinner
     // Table
     // TextField
-    // Toggle
+    Toggle: require('./components/Toggle/React.Toggle')
 };

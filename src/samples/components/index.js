@@ -12,6 +12,7 @@ var Components = {
     Button: require('./Button'),
     Label: require('./Label'),
     Link: require('./Link'),
+    Toggle: require('./Toggle'),
     '': require('./empty.js')
 };
 
