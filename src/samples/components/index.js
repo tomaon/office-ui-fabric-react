@@ -12,6 +12,7 @@ var Components = {
     Button: require('./Button'),
     Label: require('./Label'),
     Link: require('./Link'),
+    List: require('./List'),
     ListItem: require('./ListItem'),
     Pivot: require('./Pivot'),
     Toggle: require('./Toggle'),
@@ -50,7 +51,7 @@ module.exports = React.createClass({
                                 'DatePicker',
                                 'Dialog',
                                 'Dropdown',
-                                // 'Icon'
+                             // 'Icon'
                                 'Label',
                                 'Link',
                                 'List',
