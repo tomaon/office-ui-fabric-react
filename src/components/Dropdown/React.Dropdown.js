@@ -63,10 +63,6 @@ var Dropdown = React.createClass({
         this.setState({width: ReactDOM.findDOMNode(this.refs.dd).offsetWidth});
     },
 
-    shouldComponentUpdate: function(nextProps, nextState) {
-        return this.state !== nextState;
-    },
-
     render: function() {
         return (
             React.DOM.div(
