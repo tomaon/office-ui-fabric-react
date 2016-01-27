@@ -118,9 +118,9 @@ function getField(that, props) {
         return React.DOM.textarea(
             Object.assign(
                 that.getProps(Attributes.textarea, props, {
-                    className: 'ms-TextField-field',
                     onChange: that.handleChange,
-                    onInput: that.handleInput
+                    onInput: that.handleInput,
+                    className: 'ms-TextField-field'
                 }),
                 {
                     onFocus: that.handleFocus,
@@ -132,10 +132,10 @@ function getField(that, props) {
         return React.DOM.input(
             Object.assign(
                 that.getProps(Attributes.text, props, {
-                    className: 'ms-TextField-field',
-                    type: 'text',
                     onChange: that.handleChange,
-                    onInput: that.handleInput
+                    onInput: that.handleInput,
+                    className: 'ms-TextField-field',
+                    type: 'text'
                 }),
                 {
                     onFocus: that.handleFocus,
