@@ -1,6 +1,6 @@
 {
     "name": "office-ui-fabric-react",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Office UI Fabric components built with React",
     "keywords": [
         "office-ui-fabric",
@@ -31,17 +31,17 @@
     "dependencies": {
         "classnames": "^2.2.3",
         "office-ui-fabric": "1.2.1",
-        "react": "^0.14.6",
-        "react-dom": "^0.14.6"
+        "react": "^0.14.7",
+        "react-dom": "^0.14.7"
     },
     "devDependencies": {
         "eslint": "^1.10.3",
         "eslint-config-google": "^0.3.0",
-        "eslint-loader": "^1.2.0",
+        "eslint-loader": "^1.2.1",
         "webpack": "^1.12.12"
     },
     "engines": {
         "node": "^4.2.6"
     },
-    "private": true
+    "private": false
 }
