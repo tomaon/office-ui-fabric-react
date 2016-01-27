@@ -3,6 +3,7 @@
  */
 
 #root > section > header {
+    position: absolute;
     float: left;
     width: 200px;
 }
@@ -12,6 +13,7 @@
 }
 
 #root > section > article {
+    position: relative;
     margin-left: 200px;
 }
 

@@ -9,6 +9,7 @@
 var React = require('react');
 
 var Components = {
+    Label: require('./Label'),
     '': require('./empty.js')
 };
 
