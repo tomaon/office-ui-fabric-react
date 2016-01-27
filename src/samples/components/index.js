@@ -15,6 +15,7 @@ var Components = {
     Link: require('./Link'),
     List: require('./List'),
     ListItem: require('./ListItem'),
+    Overlay: require('./Overlay'),
     Pivot: require('./Pivot'),
     TextField: require('./TextField'),
     Toggle: require('./Toggle'),

@@ -22,7 +22,7 @@ module.exports = {
     // MessageBanner
     // NavBar
     // OrgChart
-    // Overlay
+    Overlay: require('./components/Overlay/React.Overlay'),
     // Panel
     // PeoplePicker
     // Persona
