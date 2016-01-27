@@ -32,6 +32,6 @@ module.exports = {
     // SearchBox
     // Spinner
     // Table
-    // TextField
+    TextField: require('./components/TextField/React.TextField'),
     Toggle: require('./components/Toggle/React.Toggle')
 };

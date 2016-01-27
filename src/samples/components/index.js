@@ -16,6 +16,7 @@ var Components = {
     List: require('./List'),
     ListItem: require('./ListItem'),
     Pivot: require('./Pivot'),
+    TextField: require('./TextField'),
     Toggle: require('./Toggle'),
     '': require('./empty.js')
 };
