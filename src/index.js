@@ -31,7 +31,7 @@ module.exports = {
     // ProgresIndicator
     SearchBox: require('./components/SearchBox/React.SearchBox'),
     // Spinner
-    // Table
+    Table: require('./components/SearchBox/React.SearchBox'),
     TextField: require('./components/TextField/React.TextField'),
     Toggle: require('./components/Toggle/React.Toggle')
 };
