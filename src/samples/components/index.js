@@ -13,6 +13,7 @@ var Components = {
     Dropdown: require('./Dropdown'),
     Label: require('./Label'),
     Link: require('./Link'),
+    List: require('./List'),
     ListItem: require('./ListItem'),
     Pivot: require('./Pivot'),
     Toggle: require('./Toggle'),

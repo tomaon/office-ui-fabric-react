@@ -17,7 +17,7 @@ module.exports = {
     Icon: require('./components/Icon/React.Icon'),
     Label: require('./components/Label/React.Label'),
     Link: require('./components/Link/React.Link'),
-    // List
+    List: require('./components/List/React.List'),
     ListItem: require('./components/ListItem/React.ListItem'),
     // MessageBanner
     // NavBar
