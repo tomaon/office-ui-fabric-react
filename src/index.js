@@ -21,7 +21,7 @@ module.exports = {
     ListItem: require('./components/ListItem/React.ListItem'),
     // MessageBanner
     // NavBar
-    // OrgChart
+    OrgChart: require('./components/OrgChart/React.OrgChart'),
     Overlay: require('./components/Overlay/React.Overlay'),
     // Panel
     // PeoplePicker
