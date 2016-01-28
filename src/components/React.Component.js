@@ -48,6 +48,17 @@ var Component = {
         }
     },
 
+    includes: function(from, vars, prefix) {
+        var to = {};
+        for (var k in vars) {
+            if ({}.hasOwnProperty.call(vars, k)) {
+                var v = from[k];
+                to[prefix + v] = vars[k].includes(v);
+            }
+        }
+        return to;
+    },
+
     toArray: function(obj) {
         return Object.keys(obj).map(function(e) {
             return obj[e];

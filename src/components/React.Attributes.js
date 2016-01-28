@@ -1,8 +1,7 @@
 /*
  * src/components/React.Attributes.js
  *
- * http://www.w3.org/TR/2014/REC-html5-20141028/dom.html#global-attributes
- * http://www.w3.org/TR/2014/REC-html5-20141028/forms.html#the-input-element
+ * http://www.w3.org/TR/2014/REC-html5-20141028/dom.html
  * https://facebook.github.io/react/docs/tags-and-attributes.html
  * react/src/renderers/dom/shared/HTMLDOMPropertyConfig.js
  */
@@ -96,6 +95,21 @@ module.exports = {
 
         // Aria role attribute
         role: React.PropTypes.string
+    }),
+
+    img: Object.assign({}, Attributes, {
+
+        // Content attributes
+        alt: React.PropTypes.string,
+        src: React.PropTypes.string,
+        crossOrigin: React.PropTypes.string,
+        useMap: React.PropTypes.string,
+        isMap: React.PropTypes.bool, // not-supported
+        width: React.PropTypes.number,
+        height: React.PropTypes.number,
+
+        // Aria role attribute
+        role: React.PropTypes.string // alt !== '', 'presentation': alt === ''
     }),
 
     input: {

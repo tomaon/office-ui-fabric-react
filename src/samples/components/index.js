@@ -16,6 +16,7 @@ var Components = {
     List: require('./List'),
     ListItem: require('./ListItem'),
     Overlay: require('./Overlay'),
+    Persona: require('./Persona'),
     Pivot: require('./Pivot'),
     SearchBox: require('./SearchBox'),
     Table: require('./Table'),

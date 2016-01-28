@@ -25,7 +25,7 @@ module.exports = {
     Overlay: require('./components/Overlay/React.Overlay'),
     // Panel
     // PeoplePicker
-    // Persona
+    Persona: require('./components/Persona/React.Persona'),
     // PersonaCard
     Pivot: require('./components/Pivot/React.Pivot'),
     // ProgresIndicator
