@@ -12,6 +12,10 @@ var Components = {
 
 var Attributes = Components.base.Attributes.div;
 
+var Enums = {
+    kind: ['dark', 'none']
+};
+
 var Overlay = React.createClass({
 
     displayName: 'Overlay',
@@ -21,7 +25,7 @@ var Overlay = React.createClass({
     propTypes: Object.assign({}, Attributes, {
 
         // Office-UI attribute
-        kind: React.PropTypes.oneOf(['dark', 'none'])
+        kind: React.PropTypes.oneOf(Enums.kind)
     }),
 
     render: function() {
@@ -37,16 +41,8 @@ var Overlay = React.createClass({
 });
 
 function getClassName(that, props) {
-    var className;
-    switch (props.kind) {
-    case 'dark': case 'none':
-        className = 'ms-Overlay ms-Overlay--' + props.kind;
-        break;
-    default:
-        className = 'ms-Overlay';
-        break;
-    }
-    return that.className(props.className, className);
+    var includes = that.includes(props, Enums, 'ms-Overlay--');
+    return that.className(props.className, 'ms-Overlay', includes);
 }
 
 module.exports = Overlay;

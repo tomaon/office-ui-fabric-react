@@ -41,10 +41,16 @@ module.exports = React.createClass({
                         null,
                         'ListItem - Image'
                     ),
-                    getItem({kind: 'image'}, React.DOM.div({ // TODO
-                        className: 'ms-ListItem-image',
-                        style: {backgroundColor: '#767676'}
-                    }))
+                    getItem({kind: 'image'}, React.DOM.div(
+                        {
+                            className: 'ms-ListItem-image'
+                        },
+                        React.DOM.img(
+                            {
+                                src: 'src/samples/img/silver.png'
+                            }
+                        )
+                    ))
                 ),
                 React.DOM.section(
                     null,
@@ -57,11 +63,15 @@ module.exports = React.createClass({
                         {
                             kind: 'document'
                         },
-                        React.DOM.div( // TODO
+                        React.DOM.div(
                             {
-                                className: 'ms-ListItem-itemIcon ms-ListItem-itemIcon--ppt',
-                                style: {backgroundColor: '#767676'}
-                            }
+                                className: 'ms-ListItem-itemIcon ms-ListItem-itemIcon--ppt'
+                            },
+                            React.DOM.img(
+                                {
+                                    src: 'src/samples/img/silver.png'
+                                }
+                            )
                         ),
                         React.DOM.span(
                             {

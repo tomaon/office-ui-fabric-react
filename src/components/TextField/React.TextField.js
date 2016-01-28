@@ -16,6 +16,10 @@ var Attributes = {
     textarea: Components.base.Attributes.textarea
 };
 
+var Enums = {
+    kind: ['multiline', 'placeholder', 'underlined']
+};
+
 var TextField = React.createClass({
 
     displayName: 'TextField',
@@ -33,7 +37,7 @@ var TextField = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(['multiline', 'placeholder', 'underlined']),
+        kind: React.PropTypes.oneOf(Enums.kind),
         label: React.PropTypes.string
     }),
 
@@ -87,16 +91,8 @@ var TextField = React.createClass({
 });
 
 function getClassName(that, props, state) {
-    var className;
-    switch (props.kind) {
-    case 'multiline': case 'placeholder': case 'underlined':
-        className = 'ms-TextField ms-TextField--' + props.kind;
-        break;
-    default:
-        className = 'ms-TextField';
-        break;
-    }
-    return that.className(props.className, className, {
+    var includes = that.includes(props, Enums, 'ms-TextField--');
+    return that.className(props.className, 'ms-TextField', includes, {
         'is-disabled': props.disabled,
         'is-required': props.required,
         'is-active': state.active

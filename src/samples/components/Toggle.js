@@ -59,7 +59,7 @@ module.exports = React.createClass({
                             checked: this.state.checked.t2,
                             disabled: this.state.disabled,
                             eventKey: 't2',
-                            text: 'left'
+                            text: 'textLeft'
                         },
                         'Let apps use my location'
                     )

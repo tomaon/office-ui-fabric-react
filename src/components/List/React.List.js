@@ -12,6 +12,10 @@ var Components = {
 
 var Attributes = Components.base.Attributes.div;
 
+var Enums = {
+    kind: ['grid']
+};
+
 var List = React.createClass({
 
     displayName: 'List',
@@ -37,7 +41,7 @@ var List = React.createClass({
 
         // Office-UI attribute
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(['grid'])
+        kind: React.PropTypes.oneOf(Enums.kind)
     }),
 
     render: function() {
@@ -58,16 +62,8 @@ var List = React.createClass({
 });
 
 function getClassName(that, props) {
-    var className;
-    switch (props.kind) {
-    case 'grid':
-        className = 'ms-List ms-List--' + props.kind;
-        break;
-    default:
-        className = 'ms-List';
-        break;
-    }
-    return that.className(props.className, className);
+    var includes = that.includes(props, Enums, 'ms-List--');
+    return that.className(props.className, 'ms-List', includes);
 }
 
 function getItems(that, props) {

@@ -13,6 +13,10 @@ var Components = {
 
 var Attributes = Components.base.Attributes.button;
 
+var Enums = {
+    kind: ['primary', 'hero', 'compound', 'command']
+};
+
 var Button = React.createClass({
 
     displayName: 'Button',
@@ -23,7 +27,7 @@ var Button = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(['primary', 'hero', 'compound', 'command']),
+        kind: React.PropTypes.oneOf(Enums.kind),
         label: React.PropTypes.string,
         icon: React.PropTypes.string
     }),
@@ -57,16 +61,8 @@ var Button = React.createClass({
 });
 
 function getClassName(that, props) {
-    var className;
-    switch (props.kind) {
-    case 'primary': case 'hero': case 'compound': case 'command':
-        className = 'ms-Button ms-Button--' + props.kind;
-        break;
-    default:
-        className = 'ms-Button';
-        break;
-    }
-    return that.className(props.className, className, {
+    var includes = that.includes(props, Enums, 'ms-Button--');
+    return that.className(props.className, 'ms-Button', includes, {
         'is-disabled': props.disabled
     });
 }
