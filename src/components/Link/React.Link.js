@@ -12,7 +12,7 @@ var Components = {
 
 var Attributes = Components.base.Attributes.a;
 
-var Enums = {
+var Arrays = {
     kind: ['hero']
 };
 
@@ -26,7 +26,7 @@ var Link = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(Enums.kind)
+        kind: React.PropTypes.oneOf(Arrays.kind)
     }),
 
     render: function() {
@@ -50,7 +50,7 @@ var Link = React.createClass({
 });
 
 function getClassName(that, props) {
-    var includes = that.includes(props, Enums, 'ms-Link--');
+    var includes = that.includes(props, Arrays, 'ms-Link--');
     return that.className(props.className, 'ms-Link', includes);
 }
 

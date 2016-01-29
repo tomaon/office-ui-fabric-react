@@ -12,7 +12,7 @@ var Components = {
 
 var Attributes = Components.base.Attributes.div;
 
-var Enums = {
+var Arrays = {
     kind: ['document', 'image']
 };
 
@@ -35,7 +35,7 @@ var ListItem = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(Enums.kind),
+        kind: React.PropTypes.oneOf(Arrays.kind),
         selectable: React.PropTypes.bool,
         selected: React.PropTypes.bool,
         unread: React.PropTypes.bool,
@@ -75,7 +75,7 @@ var ListItem = React.createClass({
 });
 
 function getClassName(that, props) {
-    var includes = that.includes(props, Enums, 'ms-ListItem--');
+    var includes = that.includes(props, Arrays, 'ms-ListItem--');
     return that.className(props.className, 'ms-ListItem', includes, {
         'is-selectable': props.selectable,
         'is-selected': props.selected,

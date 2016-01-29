@@ -12,7 +12,7 @@ var Components = {
 
 var Attributes = Components.base.Attributes.input.checkbox;
 
-var Enums = {
+var Arrays = {
     text: ['textLeft']
 };
 
@@ -35,7 +35,7 @@ var Toggle = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        text: React.PropTypes.oneOf(Enums.text),
+        text: React.PropTypes.oneOf(Arrays.text),
         label: React.PropTypes.shape({
             on: React.PropTypes.string,
             off: React.PropTypes.string
@@ -72,7 +72,7 @@ var Toggle = React.createClass({
 });
 
 function getClassName(that, props) {
-    var includes = that.includes(props, Enums, 'ms-Toggle--');
+    var includes = that.includes(props, Arrays, 'ms-Toggle--');
     return that.className(props.className, 'ms-Toggle', includes, {
         'is-disabled': props.disabled
     });

@@ -16,7 +16,7 @@ var Attributes = {
     textarea: Components.base.Attributes.textarea
 };
 
-var Enums = {
+var Arrays = {
     kind: ['multiline', 'placeholder', 'underlined']
 };
 
@@ -37,7 +37,7 @@ var TextField = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(Enums.kind),
+        kind: React.PropTypes.oneOf(Arrays.kind),
         label: React.PropTypes.string
     }),
 
@@ -91,7 +91,7 @@ var TextField = React.createClass({
 });
 
 function getClassName(that, props, state) {
-    var includes = that.includes(props, Enums, 'ms-TextField--');
+    var includes = that.includes(props, Arrays, 'ms-TextField--');
     return that.className(props.className, 'ms-TextField', includes, {
         'is-disabled': props.disabled,
         'is-required': props.required,

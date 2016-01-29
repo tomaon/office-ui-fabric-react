@@ -12,7 +12,7 @@ var Components = {
 
 var Attributes = Components.base.Attributes.div;
 
-var Enums = {
+var Arrays = {
     kind: ['grid']
 };
 
@@ -41,7 +41,7 @@ var List = React.createClass({
 
         // Office-UI attribute
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(Enums.kind)
+        kind: React.PropTypes.oneOf(Arrays.kind)
     }),
 
     render: function() {
@@ -62,7 +62,7 @@ var List = React.createClass({
 });
 
 function getClassName(that, props) {
-    var includes = that.includes(props, Enums, 'ms-List--');
+    var includes = that.includes(props, Arrays, 'ms-List--');
     return that.className(props.className, 'ms-List', includes);
 }
 

@@ -15,7 +15,7 @@ var Components = {
 
 var Attributes = Components.base.Attributes.div;
 
-var Enums = {
+var Arrays = {
     kind: ['away', 'blocked', 'busy', 'dnd', 'offline'],
     shape: ['square'],
     size: ['tiny', 'xs', 'sm', 'lg', 'xl'],
@@ -41,10 +41,10 @@ var Persona = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        kind: React.PropTypes.oneOf(Enums.kind),
-        shape: React.PropTypes.oneOf(Enums.shape),
-        size: React.PropTypes.oneOf(Enums.size),
-        theme: React.PropTypes.oneOf(Enums.theme),
+        kind: React.PropTypes.oneOf(Arrays.kind),
+        shape: React.PropTypes.oneOf(Arrays.shape),
+        size: React.PropTypes.oneOf(Arrays.size),
+        theme: React.PropTypes.oneOf(Arrays.theme),
         readOnly: React.PropTypes.bool,
         selectable: React.PropTypes.bool,
         available: React.PropTypes.bool
@@ -83,7 +83,7 @@ var Persona = React.createClass({
 });
 
 function getClassName(that, props) {
-    var includes = that.includes(props, Enums, 'ms-Persona--');
+    var includes = that.includes(props, Arrays, 'ms-Persona--');
     return that.className(props.className, 'ms-Persona', includes, {
         'ms-Persona--readonly': props.readOnly,
         'ms-Persona--selectable': props.selectable,

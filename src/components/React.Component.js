@@ -48,12 +48,12 @@ var Component = {
         }
     },
 
-    includes: function(from, vars, prefix) {
+    includes: function(from, obj, prefix) {
         var to = {};
-        for (var k in vars) {
-            if ({}.hasOwnProperty.call(vars, k)) {
+        for (var k in obj) {
+            if ({}.hasOwnProperty.call(obj, k)) {
                 var v = from[k];
-                to[prefix + v] = vars[k].includes(v);
+                to[prefix + v] = obj[k].includes(v);
             }
         }
         return to;
