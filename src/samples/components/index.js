@@ -10,6 +10,7 @@ var React = require('react');
 
 var Components = {
     Button: require('./Button'),
+    ChoiceField: require('./ChoiceField'),
     Dropdown: require('./Dropdown'),
     Label: require('./Label'),
     Link: require('./Link'),

@@ -8,7 +8,7 @@ module.exports = {
     // Breadcrumb
     Button: require('./components/Button/React.Button'),
     // Callout
-    // ChoiceField
+    ChoiceField: require('./components/ChoiceField/React.ChoiceField'),
     // CommandBar
     // ContextualMenu
     // DatePicker
