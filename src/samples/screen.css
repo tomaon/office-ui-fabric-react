@@ -3,6 +3,7 @@
  */
 
 #root > section > header {
+    position: absolute;
     float: left;
     width: 200px;
 }
@@ -12,9 +13,48 @@
 }
 
 #root > section > article {
+    position: relative;
     margin-left: 200px;
 }
 
 #root > section > article > section {
     padding-bottom: 1em;
+}
+
+
+/* office-ui-fabric: 1.2.1 */
+
+.ms-Persona--tiny .ms-Persona-imageArea {
+    display: none;
+}
+
+.ms-SearchBox-closeButton {
+    z-index: 10; /* @ms-zIndex-front */
+}
+
+.ms-SearchBox-field {
+    z-index: 5; /* @ms-zIndex-middle */
+}
+
+.ms-SearchBox-label {
+    z-index: 0; /* @ms-zIndex-back */
+}
+
+.ms-TextField.ms-TextField--placeholder .ms-TextField-field {
+    position: relative;
+    background-color: transparent;
+    z-index: 5; /* @ms-zIndex-middle */
+}
+
+.ms-TextField.ms-TextField--placeholder .ms-Label {
+    z-index: 0; /* @ms-zIndex-back */
+}
+
+.ms-Toggle-description.is-required:after {
+    content: ' *';
+    color: #a80000; /* @ms-color-error */
+}
+
+.ms-Toggle-description.is-disabled {
+    color: #a6a6a6; /* @ms-color-neutralTertiary */
 }
