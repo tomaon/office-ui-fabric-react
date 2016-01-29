@@ -41,8 +41,8 @@ var OrgChartListItem = React.createClass({
                 }),
                 React.DOM.button(
                     {
-                        onClick: this.handleClick,
                         className: 'ms-OrgChart-listItemBtn',
+                        onClick: this.handleClick,
                         type: 'button'
                     },
                     this.props.children

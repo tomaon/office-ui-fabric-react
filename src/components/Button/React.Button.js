@@ -42,8 +42,8 @@ var Button = React.createClass({
         return (
             React.DOM.button(
                 this.getProps(Attributes, this.props, {
-                    onClick: this.handleClick,
-                    className: getClassName(this, this.props)
+                    className: getClassName(this, this.props),
+                    onClick: this.handleClick
                 }),
                 getIcon(this, this.props),
                 getLabel(this, this.props),
