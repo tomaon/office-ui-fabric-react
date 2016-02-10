@@ -11,6 +11,7 @@ var React = require('react');
 var Components = {
     Button: require('./Button'),
     ChoiceField: require('./ChoiceField'),
+    ContextualMenu: require('./ContextualMenu'),
     Dialog: require('./Dialog'),
     Dropdown: require('./Dropdown'),
     Label: require('./Label'),
