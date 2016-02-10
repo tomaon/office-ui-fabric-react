@@ -24,6 +24,9 @@ var Overlay = React.createClass({
 
     propTypes: Object.assign({}, Attributes, {
 
+        // Event handler content attribute
+        onClick: React.PropTypes.func, // (event)
+
         // Office-UI attribute
         kind: React.PropTypes.oneOf(Arrays.kind)
     }),
@@ -31,9 +34,14 @@ var Overlay = React.createClass({
     render: function() {
         return (
             React.DOM.div(
-                this.getProps(Attributes, this.props, {
-                    className: getClassName(this, this.props)
-                })
+                Object.assign(
+                    this.getProps(Attributes, this.props, {
+                        className: getClassName(this, this.props)
+                    }),
+                    {
+                        onClick: this.props.onClick
+                    }
+                )
             )
         );
     }
