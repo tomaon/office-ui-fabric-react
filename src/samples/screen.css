@@ -23,6 +23,10 @@
 
 /* office-ui-fabric: 2.0.1 */
 
+.ms-Dialog.ms-Dialog--is-disabled {
+    display: none;
+}
+
 .ms-TextField.ms-TextField--placeholder .ms-TextField-field {
     position: relative;
     background-color: transparent;
