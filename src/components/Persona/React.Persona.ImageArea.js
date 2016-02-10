@@ -7,11 +7,18 @@
 var React = require('react');
 
 var Components = {
-    base: require('../React.Component'),
-    icon: require('../Icon/React.Icon')
+    base: require('../React.Component')
 };
 
 var Attributes = Components.base.Attributes.img;
+
+var Arrays = {
+    initials: [
+        'lightBlue', 'blue', 'darkBlue', 'teal', 'lightGreen', 'green',
+        'darkGreen', 'lightPink', 'pink', 'magenta', 'purple', 'black',
+        'orange', 'red', 'darkRed'
+    ]
+};
 
 var PersonaImageArea = React.createClass({
 
@@ -20,6 +27,9 @@ var PersonaImageArea = React.createClass({
     mixins: [Components.base],
 
     propTypes: Object.assign({}, Attributes, {
+
+        // Office-UI attributes
+        initials: React.PropTypes.oneOf(Arrays.initials)
     }),
 
     render: function() {
@@ -28,12 +38,11 @@ var PersonaImageArea = React.createClass({
                 {
                     className: getClassName(this)
                 },
-                React.createElement(
-                    Components.icon,
+                React.DOM.div(
                     {
-                        className: 'ms-Persona-placeholder',
-                        kind: 'person'
-                    }
+                        className: getClassName2(this, this.props)
+                    },
+                    this.props.children
                 ),
                 React.DOM.img(
                     this.getProps(Attributes, this.props, {
@@ -48,6 +57,11 @@ var PersonaImageArea = React.createClass({
 
 function getClassName(that) {
     return that.className(that.props.className, 'ms-Persona-imageArea');
+}
+
+function getClassName2(that, props) {
+    var includes = that.includes(props, Arrays, 'ms-Persona-initials--');
+    return that.className('ms-Persona-initials', includes);
 }
 
 module.exports = PersonaImageArea;

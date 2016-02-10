@@ -21,24 +21,7 @@
     padding-bottom: 1em;
 }
 
-
-/* office-ui-fabric: 1.2.1 */
-
-.ms-Persona--tiny .ms-Persona-imageArea {
-    display: none;
-}
-
-.ms-SearchBox-closeButton {
-    z-index: 10; /* @ms-zIndex-front */
-}
-
-.ms-SearchBox-field {
-    z-index: 5; /* @ms-zIndex-middle */
-}
-
-.ms-SearchBox-label {
-    z-index: 0; /* @ms-zIndex-back */
-}
+/* office-ui-fabric: 2.0.1 */
 
 .ms-TextField.ms-TextField--placeholder .ms-TextField-field {
     position: relative;

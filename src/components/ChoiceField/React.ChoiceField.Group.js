@@ -46,7 +46,7 @@ var ChoiceFieldGroup = React.createClass({
 
         // Office-UI attributes
         eventKey: React.PropTypes.any,
-        title: React.PropTypes.string,
+        groupTitle: React.PropTypes.string,
         type: React.PropTypes.oneOf(Arrays.type),
         disabled: React.PropTypes.bool,
         required: React.PropTypes.bool,
@@ -67,7 +67,7 @@ var ChoiceFieldGroup = React.createClass({
                 {
                     className: getClassName(this)
                 },
-                getTitle(this, this.props),
+                getGroupTitle(this, this.props),
                 getFields(this, this.props)
             )
         );
@@ -94,8 +94,8 @@ function getFields(that, props) {
     }, props);
 }
 
-function getTitle(that, props) {
-    return props.title === undefined ? undefined : React.DOM.div(
+function getGroupTitle(that, props) {
+    return props.groupTitle === undefined ? undefined : React.DOM.div(
         {
             className: 'ms-ChoiceFieldGroup-title'
         },
@@ -105,7 +105,7 @@ function getTitle(that, props) {
                 disabled: props.disabled,
                 required: props.required
             },
-            props.title
+            props.groupTitle
         )
     );
 }

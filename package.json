@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "classnames": "^2.2.3",
-        "office-ui-fabric": "1.2.1",
+        "office-ui-fabric": "2.0.1",
         "react": "^0.14.7",
         "react-dom": "^0.14.7"
     },
@@ -38,7 +38,7 @@
         "eslint": "^1.10.3",
         "eslint-config-google": "^0.3.0",
         "eslint-loader": "^1.2.1",
-        "webpack": "^1.12.12"
+        "webpack": "^1.12.13"
     },
     "engines": {
         "node": "^4.2.6"

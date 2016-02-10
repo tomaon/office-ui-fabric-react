@@ -69,7 +69,7 @@ module.exports = React.createClass({
                         {
                             onSelect: this.handleSelect,
                             eventKey: 'g3',
-                            title: 'Pick one',
+                            groupTitle: 'Pick one',
                             type: 'radio',
                             disabled: this.state.disabled,
                             required: !this.state.disabled,

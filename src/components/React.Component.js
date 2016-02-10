@@ -27,12 +27,14 @@ var Component = {
     },
 
     getProps: function() {
+        var re = new RegExp(/^(data|aria)-[a-z_][a-z\d_.\-]*$/);
         var to = {};
         for (var attributes = arguments[0], i = 1; i < arguments.length; ++i) {
             var from = arguments[i];
             for (var n in from) {
                 var v = from[n];
-                if (attributes[n] !== undefined && v !== undefined) {
+                if (v !== undefined &&
+                    (n.match(re) || attributes[n] !== undefined)) {
                     to[n] = v;
                 }
             }

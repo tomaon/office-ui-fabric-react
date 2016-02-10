@@ -42,7 +42,7 @@ var OrgChartGroup = React.createClass({
         onSelect: React.PropTypes.func, // (eventKey,selected,event),
 
         // Office-UI attribute
-        title: React.PropTypes.string
+        groupTitle: React.PropTypes.string
     }),
 
     render: function() {
@@ -51,7 +51,7 @@ var OrgChartGroup = React.createClass({
                 this.getProps(Attributes, this.props, {
                     className: getClassName(this, this.props)
                 }),
-                getTitle(this, this.props),
+                getGroupTitle(this, this.props),
                 this.props.children
             )
         );
@@ -68,12 +68,12 @@ function getClassName(that, props) {
     return that.className(props.className, 'ms-OrgChart-list');
 }
 
-function getTitle(that, props) {
-    return props.title === undefined ? undefined : React.DOM.div(
+function getGroupTitle(that, props) {
+    return props.groupTitle === undefined ? undefined : React.DOM.div(
         {
             className: 'ms-OrgChart-groupTitle'
         },
-        props.title
+        props.groupTitle
     );
 }
 
