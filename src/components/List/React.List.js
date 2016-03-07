@@ -10,7 +10,7 @@ var Components = {
     base: require('../React.Component')
 };
 
-var Attributes = Components.base.Attributes.div;
+var Attributes = Components.base.Attributes.ul;
 
 var Arrays = {
     kind: ['grid']
@@ -46,7 +46,7 @@ var List = React.createClass({
 
     render: function() {
         return (
-            React.DOM.div(
+            React.DOM.ul(
                 this.getProps(Attributes, this.props, {
                     className: getClassName(this, this.props)
                 }),
