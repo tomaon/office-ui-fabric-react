@@ -10,7 +10,7 @@ var Components = {
     base: require('../React.Component')
 };
 
-var Attributes = Components.base.Attributes.div;
+var Attributes = Components.base.Attributes.li;
 
 var Arrays = {
     kind: ['document', 'image']
@@ -53,7 +53,7 @@ var ListItem = React.createClass({
 
     render: function() {
         return (
-            React.DOM.div(
+            React.DOM.li(
                 Object.assign(
                     this.getProps(Attributes, this.props, {
                         className: getClassName(this, this.props)
