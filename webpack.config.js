@@ -3,11 +3,11 @@ var Webpack = require('webpack');
 module.exports = (function(options) {
 
     var entry = {
-        'office-ui-fabric-react': './index.js'
+        'office-ui-fabric-react': './src/index.js'
     };
 
     if (options.env === 'development') {
-        entry.samples = './samples/index.js'
+        entry.samples = './src/samples/index.js'
     }
 
     var plugins = [];
@@ -24,12 +24,10 @@ module.exports = (function(options) {
 
     return {
 
-        context: __dirname + '/src',
-
         entry: entry,
 
         output: {
-            path: __dirname + '/dist',
+            path: './dist',
             filename: options.minimize ? '[name].min.js' : '[name].js',
             library: 'OfficeUIFabricReact'
         },

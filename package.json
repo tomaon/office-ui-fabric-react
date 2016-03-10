@@ -19,6 +19,7 @@
         "samples.html",
         "src"
     ],
+    "main": "src/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/tomaon/office-ui-fabric-react"
