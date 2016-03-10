@@ -24,14 +24,14 @@ var Attributes = {
     style: React.PropTypes.object,
     tabIndex: React.PropTypes.number,
     title: React.PropTypes.string,
-    translate: React.PropTypes.oneOf(['yes', 'no']), // not-supported
+    translate: React.PropTypes.oneOf(['yes', 'no']) // not-supported
 
-    // React attributes
-    key: React.PropTypes.string,
-    ref: React.PropTypes.oneOfType([
-        React.PropTypes.func,
-        React.PropTypes.string
-    ])
+//  // React attributes
+//  key: React.PropTypes.string,
+//  ref: React.PropTypes.oneOfType([
+//      React.PropTypes.func,
+//      React.PropTypes.string
+//  ])
 };
 
 module.exports = {
