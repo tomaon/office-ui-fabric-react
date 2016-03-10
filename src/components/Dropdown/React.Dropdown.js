@@ -68,10 +68,10 @@ var Dropdown = React.createClass({
             React.DOM.div(
                 Object.assign(
                     this.getProps(Attributes, this.props, {
-                        className: getClassName(this, this.props, this.state),
-                        ref: 'dd'
+                        className: getClassName(this, this.props, this.state)
                     }),
                     {
+                        ref: 'dd',
                         onBlur: this.handleBlur,
                         onKeyUp: this.handleKeyUp,
                         onClick: this.handleClick
